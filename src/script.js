@@ -1,5 +1,5 @@
 let testapp = {
-    name: 'Adeel Afzal',
+    name: 'Huzaifa',
     location: 'Toba Tek Singh '
 };
 
