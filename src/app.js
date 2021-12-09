@@ -1,9 +1,9 @@
-let app = {
+const app = {
     title: 'Indecision App!',
     subtitle: 'Put your life in the hand of computer',
 
 };
-let template = (
+const template = (
     <div>
         <h1>{app.title}</h1>
         { app.subtitle &&<p>{app.subtitle}</p>}
@@ -21,7 +21,7 @@ let template = (
 // let userAge = 23;
 // let userLocation = 'Isb';
 
-let user = {
+const user = {
     name: 'Adeel Afzal',
     age: 23,
     location: 'Islamabad'
@@ -45,7 +45,7 @@ function getLocation(location) {
     }
 }
 
-let templateTwo = (
+const templateTwo = (
     <div>
         {getName(user.name)}
         {getAge(user.age && user.age >= 18 && user.age)}
@@ -53,8 +53,8 @@ let templateTwo = (
     </div>
 );
 
-let appRoot = document.getElementById('app');
-let appQuiz = document.getElementById('quiz');
+const appRoot = document.getElementById('app');
+const appQuiz = document.getElementById('quiz');
 
 ReactDOM.render(template, appRoot);
 ReactDOM.render(templateTwo, appQuiz);
