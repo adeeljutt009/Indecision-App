@@ -1,7 +1,7 @@
 'use strict';
 
 var testapp = {
-    name: 'Huzaifa',
+    name: 'Adeel Afzal',
     location: 'Toba Tek Singh '
 };
 
@@ -27,7 +27,8 @@ function getLoc(location) {
 var temptest = React.createElement(
     'div',
     null,
-    getText(testapp.name),
+    getText(testapp.name.split(' ')[0]),
+    getText(testapp.name.split(' ')[1]),
     getLoc(testapp.location)
 );
 
